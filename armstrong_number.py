@@ -9,12 +9,12 @@ def armstrongNumber(number):
     sum_of_cubes = (digit1 ** 3) + (digit2 ** 3) + (digit3 ** 3)
 
     if sum_of_cubes == number:
-        print("Yes")
-        print(f"Explanation: {number} is an Armstrong number since {digit1 ** 3} + {digit2 ** 3} + {digit3 ** 3} = {sum_of_cubes}")
+        return "Yes"
     else:
-        print("No")
+        return "No"
 
 
 # Example usage
 input_number = int(input("Enter a 3-digit number: "))
-armstrongNumber(input_number)
+result = armstrongNumber(input_number)
+print(result)
